@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Program1 {
+
 	// 1. Depreciation = (Purchase Price - Salvage Price)/Years of Service
 	public static void main(String[] args) {
 		Scanner pp = new Scanner(System.in);
