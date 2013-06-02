@@ -1,23 +1,25 @@
 import java.util.Scanner;
 
-/* 5. Program to print Floyd’s triangle
-1
-2 3
-4 5 6
-7 8 9 10
-.....
-*/
+public class Program6 {
 
-public class Program5 {
+	/*
+	 * 6. Modify the above program to print below output. 
+	 	1
+		0 1
+		0 1 0
+		1 0 1 0
+		.....
+	 */
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println("How many rows of Floyd's Triangle?");
+		System.out.println("Enter the number of rows you want to print: ");
 		int n = input.nextInt();
 		int num = 1;
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= i; j++) {
-				System.out.print(num++ + " ");
+				System.out.print(num % 2);
+				num++;
 			}
 			System.out.println();
 		}
