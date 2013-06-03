@@ -7,7 +7,8 @@ public class Program3 {
 	 * $0.75 300-500 $0.50 500> $0.25 Write program to calculate the monthly
 	 * bill user needs to pay get units consumed from user?
 	 */
-
+//cumulative amount
+	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the number of units consumed: ");
