@@ -2,6 +2,13 @@ import java.util.Scanner;
 
 public class Program9 {
 
+	/* 9. Write a program to check whether the no. is:-
+1. Odd/Even
+2. Palindrome
+3. Prime
+4. Pythagoras Triplet eg. 345(3^2 + 4^2 = 5^2)
+5. Print Reverse of the number
+*/
 	public static void main(String[] args) {
 
 		// check if the number is even or odd
