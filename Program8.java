@@ -14,24 +14,20 @@ public class Program8 {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the number of units consumed: ");
 		int units = input.nextInt();
-		double amount;
+		double amount = 0;
 
 		if (units < 0) {
 			System.out.println("Units consumed cannot be less than zero");
 		} else if (units > 0 && units <= 100) {
 			amount = units * 1;
-			System.out.println("Total bill is: $" + amount);
 		} else if (units > 100 && units <= 300) {
 			amount = units * 0.75;
-			System.out.println("Total bill is: $" + amount);
 		} else if (units > 300 && units <= 500) {
 			amount = units * 0.50;
-			System.out.println("Total bill is: $" + amount);
 		} else if (units > 500) {
 			amount = units * 0.25;
-			System.out.println("Total bill is: $" + amount);
 		}
-
+		System.out.println("Total bill is: $" + amount);
 	}
 
 }
