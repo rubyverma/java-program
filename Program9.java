@@ -22,27 +22,21 @@ public class Program9 {
 		}
 
 		// check whether the number is prime or not
-		Scanner input2 = new Scanner(System.in);
-		System.out.println("Enter a number: ");
-		int n2 = input2.nextInt();
 		int check = 0;
-		for (int i = 2; i < n2; i++) {
-			if (n2 % i == 0) {
+		for (int i = 2; i < n; i++) {
+			if (n % i == 0) {
 				check = 1;
 				break;
 			}
 		}
 		if (check == 0) {
-			System.out.println(n2 + " " + "is prime");
+			System.out.println(n + " " + "is prime");
 		} else {
-			System.out.println(n2 + " " + "is composite");
+			System.out.println(n + " " + "is composite");
 		}
 
 		// check whether a number is Palindrome or not
-		Scanner input3 = new Scanner(System.in);
-		System.out.println("Enter a number: ");
-		int n3 = input3.nextInt();
-		int temp = n3;
+		int temp = n;
 		int reverse = 0;
 		while (temp != 0)
 		{
@@ -50,20 +44,17 @@ public class Program9 {
 			reverse = reverse*10 + remainder;
 			temp = temp/10;
 		}
-		if(n3 == reverse)
+		if(n == reverse)
 		{
-			System.out.println(n3 + " " + "is Palindrome");
+			System.out.println(n + " " + "is Palindrome");
 		}
 		else
 		{
-			System.out.println(n3 + " " + "is not a Palindrome");
+			System.out.println(n + " " + "is not a Palindrome");
 		}
 		
 		// print the reverse of a number
-		Scanner input4 = new Scanner(System.in);
-		System.out.println("Enter a number: ");
-		int n4 = input4.nextInt();
-		int temp2 = n4;
+		int temp2 = n;
 		int rev = 0;
 		while(temp2 != 0)
 		{
@@ -71,14 +62,11 @@ public class Program9 {
 			rev = rev*10 + rem;
 			temp2 = temp2/10;
 		}
-			System.out.println("Reverse of" + " " + n4 + " " + "is" + " " + rev); 
+			System.out.println("Reverse of" + " " + n + " " + "is" + " " + rev); 
 		
 		//find and check whether a number is pythagorean triples
 		// Additional comments - Enter upto 3 digit numbers only
-		Scanner input5 = new Scanner(System.in);
-		System.out.println("Enter a number: ");
-		int n5 = input5.nextInt();
-		int temp3 = n5;
+		int temp3 = n;
 		int rightMostDigit = 0;
 		int next_digit = 0;
 		int leftMostDigit = 0;
@@ -95,11 +83,11 @@ public class Program9 {
 		System.out.print(leftMostDigit + "+" + next_digit + "=" + rightMostDigit);
 		if(leftMostDigit + next_digit == rightMostDigit)
 		{
-			System.out.println("\n" +  n5 + " " + "is Pythagorus Triplet");
+			System.out.println("\n" +  n + " " + "is Pythagorus Triplet");
 		}
 		else
 		{
-			System.out.println("\n" + n5 + " " + "is not a Pythagorus Triplet");
+			System.out.println("\n" + n + " " + "is not a Pythagorus Triplet");
 		}
 		}
 	
