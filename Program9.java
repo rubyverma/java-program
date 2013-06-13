@@ -11,10 +11,12 @@ public class Program9 {
 */
 	public static void main(String[] args) {
 
-		// check if the number is even or odd
+		//user input
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a number: ");
 		int n = input.nextInt();
+		
+		// check if the number is even or odd
 		if (n % 2 == 0) {
 			System.out.println(n + " " + "is even");
 		} else {
