@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class Program10 {
+	/*
+	 * 10. Program to find smallest, largest, and mean and mode of given numbers
+	 * within an array? Also print reverse of array?
+	 */
 
 	public static void main(String[] args) {
 		float[] list = new float[5];
@@ -39,10 +43,9 @@ public class Program10 {
 			}
 		}
 		System.out.println("Largest number is: " + largest);
-		
+
 		// printing reverse of array
-		for(int i = 4; i>=0; i--)
-		{
+		for (int i = 4; i >= 0; i--) {
 			System.out.print(list[i] + " " + " ");
 		}
 	}
